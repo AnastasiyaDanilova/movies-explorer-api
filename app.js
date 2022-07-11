@@ -4,7 +4,6 @@ const express = require('express');
 const { errors } = require('celebrate');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-// const { celebrate, Joi, errors } = require('celebrate');
 const router = require('./routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
