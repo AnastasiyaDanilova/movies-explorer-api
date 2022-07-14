@@ -13,7 +13,7 @@ const crashTest = require('./middlewares/crashTest');
 
 const app = express();
 
-const { PORT = 3001, MONGO_DATABASE } = process.env;
+const { PORT = 3001, MONGO_DATABASE = 'mongodb://localhost:27017/moviesdb' } = process.env;
 
 mongoose.connect(MONGO_DATABASE);
 
